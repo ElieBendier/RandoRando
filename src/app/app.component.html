@@ -1,1 +1,4 @@
-<app-user-profile></app-user-profile>
+<h1 [ngStyle]="{color:isAdmin ? 'red' : 'black'}">Bonjour !</h1>
+<button>View</button>
+<button *ngIf="isAdmin">Edit</button>
+<button (click)="switchIsAdmin()">Switch</button>
